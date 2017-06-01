@@ -1,0 +1,11 @@
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #000080;
+    clear: left;
+    text-align: center;
+}
+
+#form-container {
+    padding: 1em;
+}
