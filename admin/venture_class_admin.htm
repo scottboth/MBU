@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Venture Class Room Setup</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <header>
+            <h1 class="text-center success">Welcome to Merit Badge University 2018</h1>
+          </header>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                  <h2 class="text-center">Venture Classes Form</h2>
+                  <p>Please choose classes that would be benefitial to other Venture Scouts. Choose time and the amount of youth you can instruct.</p>
+                  <hr />
+                  <div class="col-sm-12 well">
+                    <form>
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="dropdown">
+                            <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMBNumbersTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Number of Venture Classes
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="dropdown">
+                            <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMBNumbersTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Venture Classes
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">ILSC</a></li>
+                              <li><a href="#">Goal Setting</a></li>
+                              <li><a href="#">Time Management</a></li>
+                              <li><a href="#">Project Management</a></li>
+                              <li><a href="#">Menotoring</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="dropdown">
+                            <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMBNumberYouthTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Number of Youth Taught
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">2-6</a></li>
+                              <li><a href="#">4-8</a></li>
+                              <li><a href="#">6-12</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                      <div class="clearfix"></div><br /></br />
+                      <div class="col-sm-2 col-xs-12">
+                        <div class="dropdown">
+                            <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMBClassTimeNeed" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Class Time
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">1 hour</a></li>
+                              <li><a href="#">2 hours</a></li>
+                              <li><a href="#">3 hours</a></li>
+                              <li><a href="#">4 hours</a></li>
+                              <li><a href="#">more than 4 hours</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                      <div class="col-sm-10 col-xs-12">
+                      <div class="form-group">
+                        <label for="inputNBDiscriptionsTextArea">Venture Class Description</label>
+                        <textarea class="form-control" rows="3" type="classVentureDescription" class="form-control" id="inputClassVentureDescriptionTextArea" placeholder="Venture Class Discription"></textarea>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div><br /><br />
+                    <div class="col-sm-10 col-sm-offset-2 col-xs-12">
+                      <div class="col-sm-2  col-xs-12">
+                        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                      </div>
+                      <div class="col-sm-2  col-xs-12">
+                        <button type="next" class="btn btn-lg btn-default">Next</button>
+                      </div>
+                      <div class="col-sm-2  col-xs-12">
+                        <button type="previous" class="btn btn-lg btn-default">Previous</button>
+                      </div>
+                      <div class="col-sm-2  col-xs-12">
+                        <button type="edit" class="btn btn-lg btn-default">Edit</button>
+                      </div>
+                      <div class="col-sm-2  col-xs-12">
+                        <button type="add class" class="btn btn-lg btn-warning">Add Another Class</button>
+                      </div>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              <div class="col-sm-12 well">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped">
+                    <tbody>
+                      <tr>
+                        <th>Course Instructor's Name</th>
+                        <th>Course Name</th>
+                        <th>Course Description</th>
+                        <th>Number of Students</th>
+                        <th>Instruction Time needed</th>
+                      </tr>
+                      <tr>
+                        <td>Ally Both</td>
+                        <td>Mentoring</td>
+                        <td>This training is designed to help Venturers understand how to mentor
+                          other members of the crew and appreciate the role mentoring plays
+                          in personal growth and leadership for both the mentee and mentor.
+                          After completing this training, an experienced Venturer will be able to
+                          successfully mentor a less-experienced Venturer through the planning
+                          and execution of a crew adventure.</td>
+                        <td>4</td>
+                        <td>3 hours</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <!--<ul class="breadcrumb">
+              <li>Privacy Policy</li>
+              <li>Disclaimer</li>
+              <li>Terms of Use</li>
+            </ul>-->
+            2015-17 Copyright &copy; mbu.com</footer>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+
+</html>
