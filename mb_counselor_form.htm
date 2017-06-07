@@ -48,7 +48,7 @@
                   <form>
                     <div class="col-sm-4 col-xs-12">
                       <div class="dropdown">
-                          <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMBNumbersTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          <button class="btn btn-lg btn-info dropdown-toggle" type="button" id="inputMBNumbersTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Number of Merit Badges
                             <span class="caret"></span>
                           </button>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="col-sm-4 col-xs-12">
                       <div class="dropdown">
-                          <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          <button class="btn btn-lg btn-info dropdown-toggle" type="button" id="inputMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Merit Badges
                             <span class="caret"></span>
                           </button>
@@ -210,8 +210,8 @@
 
                     <div class="col-sm-4 col-xs-12">
                       <div class="dropdown">
-                          <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="inputMBNumberYouthTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Number of Youth Taught
+                          <button class="btn btn-lg btn-info dropdown-toggle" type="button" id="inputMBNumberYouthTaught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Max Number of Youth Taught
                             <span class="caret"></span>
                           </button>
                           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -252,10 +252,27 @@
                             <li><a href="#">Phone First, Text & Email</a></li>
                           </ul>
                         </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                      <div class="dropdown">
+                          <button class="btn btn-lg btn-warning dropdown-toggle" type="button" id="InputMBCounselorChoiceOfCommunications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Fequency taught
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                          </ul>
+                        </div>
                     </div><br /><br /><br /><br />
                     <div class="col-sm-12">
                     <div class="form-group">
-                      <label for="inputNBDiscriptionsTextArea">Merit Badge Discription</label>
+                      <label for="inputNBDiscriptionsTextArea">Merit Badge Counselor's Note</label>
                       <textarea class="form-control" rows="3" type="email" class="form-control" id="inputNBDiscriptionsTextArea" placeholder="Merit Badge Discription"></textarea>
                     </div>
                   </div>
@@ -264,13 +281,16 @@
                         <button type="submit" class="btn btn-lg btn-primary">Submit</button>
                       </div>
                       <div class="col-sm-2 col-xs-12">
-                        <button type="submit" class="btn btn-lg btn-default">Next</button>
+                        <button type="next" class="btn btn-lg btn-default">Next</button>
                       </div>
                       <div class="col-sm-2 col-xs-12">
-                        <button type="submit" class="btn btn-lg btn-default">Previous</button>
+                        <button type="Previous" class="btn btn-lg btn-default">Previous</button>
                       </div>
                       <div class="col-sm-2 col-xs-12">
-                        <button type="submit" class="btn  btn-lg btn-default">Edit</button>
+                        <button type="Edit" class="btn  btn-lg btn-default">Edit</button>
+                      </div>
+                      <div class="col-sm-2 col-xs-12">
+                        <button type="Add Another MB" class="btn  btn-lg btn-warning">Add Another Merit Badge</button>
                       </div>
                     </div>
                     <div class="clearfix"></div>
@@ -278,9 +298,146 @@
                 </div>
               </div>
             </div>
-
+            <div class="col-sm-12 well">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                  <tbody>
+                    <div class="col-sm-12">
+                      <div class="col-sm-4">
+                        <h3>Merit Badge PreReq Choices</h3>
+                      </div>
+                      <div class="col-sm-2 col-xs-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Choose All
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 col-xs-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Choose None
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <tr>
+                      <th>Merit Badge</th>
+                      <th>Required</th>
+                      <th>Requirements</th>
+                    </tr>
+                    <tr>
+                      <td>Citizenship in the Nation</td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>1. Citizenship in the Nation merit badge requirements Explain what citizenship in the nation means and what it takes to be a good citizen of this country. Discuss the rights, duties, and obligations of a responsible and active American citizen.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>2. Do two of the Following:</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>a. Visit a place that is listed as a National Historic Landmark or that is on the National Register of Historic Places. Tell your counselor what you learned about the landmark or site and what you found interesting about it.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>b. Tour your state capitol building or the U.S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>c. Tour a federal facility. Explain to your counselor what you saw there and what you learned about its function in the local community and how it serves this nation.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>d. Choose a national monument that interests you. Using books, brochures, the Internet (with your parent's permission), and other resources, find out more about the monument. Tell your counselor what you learned, and explain why the monument is important to this country's citizens.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>3. Watch the national evening news five days in a row OR read the front page of a major daily newspaper five days in a row. Discuss the national issues you learned about with your counselor. Choose one of the issues and explain how it affects you and your family.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>4. Discuss each of the following documents with your counselor. Tell your counselor how you feel life in the United States might be different without each one.</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>a. Declaration of Independence</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>b. Preamble to the Constitution</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>c. The Constitution</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                      <td>d. Bill of Rights</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-sm-12 well">
+                <div class="table-responsive table-bordered table-striped">
+                  <h3>Merit Badge Class Info</h3>
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>MB Counselor's Name</th>
+                        <th>Merit Badge</th>
+                        <th>PreReqs</th>
+                        <th>Class Time</th>
+                        <th>Size of Class</th>
+                        <th>Contact Preference</th>
+                        <th>MB Notes</th>
+                      </tr>
+                      <tr>
+                        <td>Scott Both</td>
+                        <td>Citizenship in the Nation</td>
+                        <td>2,3,4</td>
+                        <td>2 hours</td>
+                        <td>More than 20 Scouts</td>
+                        <td>Phone First, Text & Email</td>
+                        <td>None</td>
+                      </tr>
+                      <tr>
+                        <td>Hedi Webber</td>
+                        <td>Finger Printing</td>
+                        <td>None</td>
+                        <td>1 hour</td>
+                        <td>6-12</td>
+                        <td>Phone First, Text & Email</td>
+                        <td>None</td>
+                      </tr>
+                      <tr>
+                        <td>Darrell Langston</td>
+                        <td>Personal Fitness</td>
+                        <td>All</td>
+                        <td>1 hour</td>
+                        <td>4-8</td>
+                        <td>Phone First, Text</td>
+                        <td>Must call before starting 90 physical fitnes plan</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
           <footer>
+
             <!--<ul class="breadcrumb">
               <li>Privacy Policy</li>
               <li>Disclaimer</li>
